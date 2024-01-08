@@ -1,0 +1,13 @@
+container: {type: ColumnPanel}
+components:
+- name: label_1
+  properties: {text: Yor Name is come from out side, align: center, bold: true, background: brown,
+    spacing_above: none}
+  type: Label
+  layout_properties: {grid_position: 'MNDWYJ,HVRKGK', full_width_row: true}
+- name: button_1
+  properties: {text: Check, bold: true, background: skyblue}
+  type: Button
+  layout_properties: {grid_position: 'TEYXIJ,XSAAHO'}
+  event_bindings: {click: button_1_click}
+is_package: true
