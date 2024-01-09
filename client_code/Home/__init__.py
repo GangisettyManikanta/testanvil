@@ -10,13 +10,11 @@ import anvil.server
 
 class Home(HomeTemplate):
   def __init__(self, **properties):
-    # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
   def button_1_click(self, **event_args):
     name = anvil.server.call("name")
-    self.label_2.text = name[0]
-    
-    
-    
+    app_tables.exp_users.add_row(email=name[0],password=name[1])
+    self.label_3.text = name[0]
+    self.label_5.text = name[1]
     print(name)
