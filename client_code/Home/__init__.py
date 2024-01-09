@@ -17,4 +17,5 @@ class Home(HomeTemplate):
 
   def button_1_click(self, **event_args):
     name = anvil.server.call("name")
+    self.label_2.text = name
     print(name)
